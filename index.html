@@ -1,11 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portal de Filmes</title>
+    <!-- My CSS / Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bad9083f48.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <img src="images/logo.png" alt="logo">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">entrevista</a>
+            </li>
+            <p>|</p>
+            <li class="nav-item">
+                <a class="nav-link" href="#">em destaque</a>
+            </li>
+            <p>|</p>
+            <li class="nav-item">
+                <a class="nav-link" href="#">avaliações</a>
+            </li>
+            <p>|</p>
+            <li class="nav-item">
+                <a class="nav-link" href="#">entrevistas e makingof</a>
+            </li>
+            <p>|</p>
+            <li class="nav-item">
+                <a class="nav-link" href="#">novidades</a>
+            </li>
+        </ul>
+        <div class="search">
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" placeholder="Pesquisar um filme">
+            <button>
+                <i class="far fa-times-circle"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <main class="container main site-content col-12">
+        <section class="first">
+            <section class="row title">
+                <div class="col-12 ">
+                    <h1>Lançamentos</h1>
+                </div>
+            </section>
+
+            <section class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-content">
+                                <img src="./images/first-grid-movie-1.png" alt="trailer">
+
+                                <aside class="carousel-details">
+                                    <h1>NOME DO FILME</h1>
+                                    <p>sinopse Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias at ex
+                                        illum
+                                        ipsam, nam hic temporibus ipsa, eos, enim eligendi exercitationem dolore tempore
+                                        modi
+                                        voluptates? Quisquam dolorem incidunt in maxime.
+                                    </p>
+                                    <p>diretor Lorem ipsum dolor sit.</p>
+                                    <p>roteiro Lorem ipsum dolor sit.</p>
+                                    <p>estreia 2020</p>
+                                    <p>elenco<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Necessitatibus,
+                                        porro!</p>
+                                    <p>avaliação<br><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                                            class="far fa-star"></i><i class="far fa-star"></i><i
+                                            class="far fa-star"></i>
+                                    </p>
+                                </aside>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="./images/first-grid-movie-2.png" alt="trailer">
+
+                                <aside class="carousel-details">
+                                    <h1>NOME DO FILME</h1>
+                                    <p>sinopse Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias at ex
+                                        illum
+                                        ipsam, nam hic temporibus ipsa, eos, enim eligendi exercitationem dolore tempore
+                                        modi
+                                        voluptates? Quisquam dolorem incidunt in maxime.
+                                    </p>
+                                    <p>diretor Lorem ipsum dolor sit.</p>
+                                    <p>roteiro Lorem ipsum dolor sit.</p>
+                                    <p>estreia 2020</p>
+                                    <p>elenco<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Necessitatibus,
+                                        porro!</p>
+                                    <p>avaliação<br><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                                            class="far fa-star"></i><i class="far fa-star"></i><i
+                                            class="far fa-star"></i>
+                                    </p>
+                                </aside>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <img src="./images/first-grid-movie-3.png" alt="trailer">
+
+                                <aside class="carousel-details">
+                                    <h1>NOME DO FILME</h1>
+                                    <p>sinopse Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias at ex
+                                        illum
+                                        ipsam, nam hic temporibus ipsa, eos, enim eligendi exercitationem dolore tempore
+                                        modi
+                                        voluptates? Quisquam dolorem incidunt in maxime.
+                                    </p>
+                                    <p>diretor Lorem ipsum dolor sit.</p>
+                                    <p>roteiro Lorem ipsum dolor sit.</p>
+                                    <p>estreia 2020</p>
+                                    <p>elenco<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Necessitatibus,
+                                        porro!</p>
+                                    <p>avaliação<br><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                                            class="far fa-star"></i><i class="far fa-star"></i><i
+                                            class="far fa-star"></i>
+                                    </p>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <section class="second">
+            <section class="row switcher">
+                <div class="col-9">
+                    <h1>Novidades</h1>
+                </div>
+                <div class="col-3">
+                    <div class="dropdown" style="text-align: right;">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="col-3">
+                    <img src="./images/second-grid-poster1.png" alt="poster">
+                </div>
+                <div class="col-3">
+                    <img src="./images/second-grid-poster2.png" alt="poster">
+                </div>
+                <div class="col-3">
+                    <img src="./images/second-grid-poster3.png" alt="poster">
+                </div>
+                <div class="col-3">
+                    <img src="./images/second-grid-poster4.png" alt="poster">
+                </div>
+            </section>
+
+            <div class="row more">
+                <button type="button" class="btn btn-secondary col-3"><i class="fas fa-plus"></i> Carregar mais
+                    filmes</button>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1>Últimas Avaliações</h1>
+                </div>
+            </div>
+
+            <section class="row">
+                <div class="col-1 pessoa">
+                    <img src="./images/p1.jpg" alt="pessoa">
+                </div>
+                <div class="col-3">
+                    <h4>Nome Avaliador</h4>
+                    <p>Avaliação: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, fuga.</p>
+                    <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i>
+                    <span>15/09/2020</span>
+                </div>
+                <div class="col-1 pessoa">
+                    <img src="./images/p2.jpg" alt="pessoa">
+                </div>
+                <div class="col-3">
+                    <h4>Nome Avaliador</h4>
+                    <p>Avaliação: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, fuga.</p>
+                    <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i>
+                    <span>15/09/2020</span>
+                </div>
+                <div class="col-1 pessoa">
+                    <img src="./images/p3.jpg" alt="pessoa">
+                </div>
+                <div class="col-3">
+                    <h4>Nome Avaliador</h4>
+                    <p>Avaliação: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, fuga.</p>
+                    <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i>
+                    <span>15/09/2020</span>
+                </div>
+            </section>
+            <div class="row more">
+                <button type="button" class="btn btn-secondary col-3"><i class="fas fa-plus"></i> Carregar mais
+                    avaliações</button>
+            </div>
+
+        </section>
+
+        <section class="third">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Entrevistas & Making of</h1>
+                </div>
+            </div>
+
+            <div class="row interviews">
+                <div class="col-4">
+                    <img style="position: absolute;"src="./images/itvw1.png" alt="vídeo de entrevista">
+                    <h6>Filme: Nome dos Filmes</h6>
+                    <p>Diretor: nome do diretor</p>
+                    <span>Roteiro:nome do roteirista</span>
+                    <span>Estreia: 2020</span>
+                </div>
+                <div class="col-4">
+                    <img src="./images/itvw2.png" alt="vídeo de entrevista">
+                    <h6>Filme: Nome dos Filmes</h6>
+                    <p>Diretor: nome do diretor</p>
+                    <span>Roteiro:nome do roteirista</span>
+                    <span>Estreia: 2020</span>
+                </div>
+                <div class="col-4">
+                    <img src="./images/itvw3.png" alt="vídeo de entrevista">
+                    <h6>Filme: Nome dos Filmes</h6>
+                    <p>Diretor: nome do diretor</p>
+                    <span>Roteiro:nome do roteirista</span>
+                    <span>Estreia: 2020</span>
+                </div>
+            </div>
+
+            <div class="row more">
+                <button type="button" class="btn btn-secondary col-3"><i class="fas fa-plus"></i> Carregar mais
+                    filmes</button>
+            </div>
+        </section>
+
+        <section class="fourth">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="./images/news1.jpg" alt="netflix-cinema">
+                        </div>
+                        <div class="col-8">
+                            <h2>Título da Matéria</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio sunt exercitationem autem modi consectetur doloribus voluptatum tempora expedita hic perferendis, ullam quae adipisci, dolor commodi libero odit assumenda eos? Nulla a labore facilis, voluptatem veniam ducimus animi nemo exercitationem alias!</p>
+                            <span>hollywood</span>
+                            <span>oscar</span>
+                            <span>melhor filme</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="./images/new2.jpg" alt="cinema">
+                        </div>
+                        <div class="col-8">
+                            <h2>Título da Matéria</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio sunt exercitationem autem modi consectetur doloribus voluptatum tempora expedita hic perferendis, ullam quae adipisci, dolor commodi libero odit assumenda eos? Nulla a labore facilis, voluptatem veniam ducimus animi nemo exercitationem alias!</p>
+                            <span>hollywood</span>
+                            <span>oscar</span>
+                            <span>melhor filme</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="./images/news3.webp" alt="covid-cinema">
+                        </div>
+                        <div class="col-8">
+                            <h2>Título da Matéria</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio sunt exercitationem autem modi consectetur doloribus voluptatum tempora expedita hic perferendis, ullam quae adipisci, dolor commodi libero odit assumenda eos? Nulla a labore facilis, voluptatem veniam ducimus animi nemo exercitationem alias!</p>
+                            <span>hollywood</span>
+                            <span>oscar</span>
+                            <span>melhor filme</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h1>Sobre</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime modi ut animi fugiat nemo perspiciatis quas odit aut! Commodi, inventore suscipit recusandae provident consectetur a quas repellendus voluptatum tempore temporibus sed repellat minus non nulla id aspernatur, dolorem reprehenderit omnis quae nostrum exercitationem fuga illo reiciendis atque. Dolorum, laudantium suscipit!</p>
+                    <h1>Editorial</h1>
+                    <i class="fas fa-user"></i>
+                    <strong>Redação:</strong><span> Nome de Redator</span><br>
+                    <i class="fas fa-user"></i>
+                    <strong>Pesquisa:</strong><span> Nome de Pesquisador</span><br>
+                    <i class="fas fa-user"></i>
+                    <strong>Gerente Geral:</strong><span> Nome de Redator</span><br>
+                    <h3>redes sociais:</h3>
+                    <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - Amanda Severo - <b>ICEI PUC Minas</b>
+        <img src="./images/logo.png" alt="Logo">
+
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
