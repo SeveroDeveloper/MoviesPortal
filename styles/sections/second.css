@@ -6,8 +6,8 @@
 .second
 {
     background-color: #b3b1b1;
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
     grid-gap: 50px;
     width: 100%;
     margin: 0;
@@ -72,6 +72,12 @@
 {
     margin-top: 30px;
     padding: 0;
+    display: grid !important;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+    grid-gap: 5%;
+    max-width: 100%;
+    margin-left: 0px !important;
 }
 .rate{
     display: flex;
@@ -83,10 +89,75 @@
     color: white;
     text-shadow: 0px 0px 5px#fdc40a;
 }
+.pessoa
+{
+    max-width: 100%;
+}
 .pessoa img
 {
     border-radius: 50%;
     max-width: 100%;
     max-height: 100%;
     padding: 0;
+}
+@media screen and (max-width: 900px)
+{
+    .second-posters
+    {
+        width: 100%;
+        margin: 0px !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 2%;
+        border-style: solid;
+        border-width: 1px;
+        padding: 20px;
+        border-color: white;
+        border-radius: 10px;
+        border-collapse: separate;
+        
+    }
+    .poster{
+        padding: 0px !important;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1200px){
+    .evaluations
+    {
+        margin-top: 30px;
+        padding: 0;
+        display: grid !important;
+        grid-template-rows: 3fr;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 5%;
+        max-width: 100%;
+        margin-left: 0px !important;
+        margin-bottom: 20%;
+    }
+}
+@media screen and (max-width: 690px)
+{
+    .second-posters
+    {
+        width: 100%;
+        margin: 0px !important;
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 2%;
+        border-style: none;
+        
+    }
+    .poster{
+        padding: 0px !important;
+        width: 100%;
+        text-align: center;
+    }
+    .poster img
+    {
+        width: 50%;
+    }
 }
