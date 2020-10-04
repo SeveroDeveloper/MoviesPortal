@@ -7,8 +7,7 @@
     align-items: center;
     padding-right: 30px;
     padding-left: 30px;
-    width: 100%;
-
+    max-width: 100%;
 }
 .right
 {
