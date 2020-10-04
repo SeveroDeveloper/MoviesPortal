@@ -1,8 +1,8 @@
 .third
 {
     background-color: #fff;
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
     color:black;
     padding-top: 30px;
 }
@@ -16,4 +16,10 @@
     border-style: double;
     border-color: #fdc40a;
     border-width: 5px;
+}
+@media screen and (max-width: 959px)
+{
+    .spc{
+        margin-bottom: 5%;
+    }
 }
