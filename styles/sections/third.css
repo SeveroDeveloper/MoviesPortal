@@ -1,0 +1,19 @@
+.third
+{
+    background-color: #fff;
+    padding-right: 150px;
+    padding-left: 150px;
+    color:black;
+    padding-top: 30px;
+}
+.interviews
+{
+    margin-top: 40px;
+}
+.interviews img{
+    width: 100%;
+    margin-bottom: 20px;
+    border-style: double;
+    border-color: #fdc40a;
+    border-width: 5px;
+}

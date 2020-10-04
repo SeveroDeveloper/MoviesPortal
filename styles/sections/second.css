@@ -1,0 +1,92 @@
+.switcher
+{
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+.second
+{
+    background-color: #b3b1b1;
+    padding-right: 150px;
+    padding-left: 150px;
+    grid-gap: 50px;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    color: #fdc40a;
+}
+.dropb
+{
+    width: 100% !important;
+    background-color: transparent !important;
+    border-radius: 5px !important;
+    border-color: white !important;
+    border-width: 1px !important;
+    color: white !important;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 20px#fdc40a;
+}
+.drop
+{
+    width: 100% !important;
+    background-color: #fdc40a !important;
+    border-radius: 5px !important;
+    border-color: black !important;
+    border-width: 1px !important;
+    
+}
+.dropdown-item
+{
+    color: white!important;
+}
+.dropdown-item:hover
+{
+    background-color: black!important;
+}
+.second-posters
+{
+    width: 100%;
+    margin: 0px !important;
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    border-color: white;
+    border-radius: 10px;
+    border-collapse: separate;
+    
+}
+.poster{
+    padding: 0px !important;
+    width: 25%;
+    text-align: center;
+}
+.poster img
+{
+    width: 70%;
+}
+.evaluations
+{
+    margin-top: 30px;
+    padding: 0;
+}
+.rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+.rate i{
+    color: white;
+    text-shadow: 0px 0px 5px#fdc40a;
+}
+.pessoa img
+{
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+}

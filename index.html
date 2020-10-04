@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de Filmes</title>
     <!-- My CSS / Meu CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/sections/first.css">
+    <link rel="stylesheet" href="./styles/sections/second.css">
+    <link rel="stylesheet" href="./styles/sections/third.css">
+    <link rel="stylesheet" href="./styles/sections/fourth.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -20,28 +26,45 @@
     <header class="header">
         <img class="logo" src="images/logo2.png" alt="logo">
         <div class="right">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">entrevista</a>
-                    <span>|</span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">em destaque</a>
-                    <span>|</span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">avaliações</a>
-                    <span>|</span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">entrevistas e makingof</a>
-                    <span>|</span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">novidades</a>
-                </li>
-            </ul>
-            <div class="search">
+            <div class="little-menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <i class="fas fa-search"></i>
+                    <i class="far fa-times-circle"></i>
+                </label>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">entrevista</a>
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">em destaque</a>
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">avaliações</a>
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">entrevistas e makingof</a>
+                        <span>|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">novidades</a>
+                    </li>
+                </ul>
+                <div class="search" id="small">
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="text" placeholder="Pesquisar filme">
+                    <button>
+                        <i class="far fa-times-circle"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="search" id="big">
                 <button>
                     <i class="fas fa-search"></i>
                 </button>
@@ -52,7 +75,7 @@
             </div>
         </div>
     </header>
-    
+
     <main class="container all-sections col-12">
         <section class="first">
             <section class="row title">
@@ -360,7 +383,12 @@
                 <div class="col-4">
                     <aside class="about">
                         <h1>Sobre</h1>
-                        <p>Esse Portal de Filmes foi desenvolvido para a entrega de um trabalho acadêmico na disciplina de Desenvolvimento de Interfaces Web, com seu conteúdo totalmente embasado, e acabou se tornando o maior portal sobre cinema e streaming do Brasil. O site está no ar há 5 anos e é graças à todos os nossos fieis leitores que esse mero trabalho cresceu e se tornou esse gigante das telas. "É curioso como as cores do mundo real parecem muito mais reais quando vistas no cinema." - Laranja Mecânica.</p>
+                        <p>Esse Portal de Filmes foi desenvolvido para a entrega de um trabalho acadêmico na disciplina
+                            de Desenvolvimento de Interfaces Web, com seu conteúdo totalmente embasado, e acabou se
+                            tornando o maior portal sobre cinema e streaming do Brasil. O site está no ar há 5 anos e é
+                            graças à todos os nossos fieis leitores que esse mero trabalho cresceu e se tornou esse
+                            gigante das telas. "É curioso como as cores do mundo real parecem muito mais reais quando
+                            vistas no cinema." - Laranja Mecânica.</p>
                         <h1>Editorial</h1>
                         <div>
                             <i class="fas fa-user"></i>
@@ -376,9 +404,9 @@
                         </div>
                         <div>
                             <h4><b>redes sociais:</b></h4>
-                            <i style="font-size: 200%; margin-right: 5%;"class="fab fa-facebook-square"></i>
-                            <i style="font-size: 200%; margin-right: 5%;"class="fab fa-twitter"></i>
-                            <i style="font-size: 200%;"class="fab fa-instagram"></i>
+                            <i style="font-size: 200%; margin-right: 5%;" class="fab fa-facebook-square"></i>
+                            <i style="font-size: 200%; margin-right: 5%;" class="fab fa-twitter"></i>
+                            <i style="font-size: 200%;" class="fab fa-instagram"></i>
                         </div>
                     </aside>
 
@@ -388,7 +416,8 @@
 
         <footer class="footer">
 
-            <span>Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - Amanda Severo - <b>ICEI PUC Minas</b></span>
+            <span>Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - Amanda Severo - <b>ICEI PUC
+                    Minas</b></span>
             <img class="logo" src="./images/logo2.png" alt="Logo">
 
         </footer>
