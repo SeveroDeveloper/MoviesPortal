@@ -2,7 +2,7 @@
 {
     background-color: #fff;
     width: 100%;
-    padding: 40px 150px;
+    padding: 40px 10%;
     background-color: #fdc40a;
     color: black;
 }
@@ -54,4 +54,21 @@
 .about div
 {
     font-size: 120%;
+}
+hr{
+    background-color: black;
+}
+@media screen and (min-width: 1600px)
+{
+    .about{
+        font-size: 150%;
+    }
+    
+}
+@media screen and (max-width: 991px)
+{
+    .about{
+        padding-top: 5%;
+    }
+    
 }

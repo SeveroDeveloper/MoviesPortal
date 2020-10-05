@@ -123,6 +123,10 @@
         width: 100%;
         text-align: center;
     }
+    .dropb
+    {
+        font-size: 80%;
+    }
 }
 @media screen and (max-width: 1200px){
     .evaluations
