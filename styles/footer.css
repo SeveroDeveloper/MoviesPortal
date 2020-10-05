@@ -4,12 +4,18 @@
     justify-content: space-between;
     background-color: red;
     height: 15%;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 0 10%;
     font-size: 120%;
     background:black;
     color: #fdc40a;
 }
 .footer img{
     max-width: 100px;
+}
+@media screen and (max-width: 767px)
+{
+    .footer{
+        font-size: 80%;
+        padding: 10%;
+    }
 }
