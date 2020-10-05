@@ -32,11 +32,11 @@
 {
     text-align: end;
 }
-.c-img img{
+.c-img iframe{
     width: 100%;
     border-color: #fdc40a;
     border-style: double;
-    border-width: 10px;
+    border-width: 7px;
     border-radius: 20px;
     
 }
